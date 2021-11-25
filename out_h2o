@@ -1,0 +1,95 @@
+System: uname_result(system='Linux', node='lab-203-2', release='4.4.0-19041-Microsoft', version='#1151-Microsoft Thu Jul 22 21:05:00 PST 2021', machine='x86_64', processor='x86_64')  Threads 12
+Python 3.7.11 (default, Jul 27 2021, 14:32:16) 
+[GCC 7.5.0]
+numpy 1.19.2  scipy 1.6.2
+Date: Wed Aug 25 16:53:25 2021
+PySCF version 1.7.6
+PySCF path  /home/emejia/psi4conda/envs/psi4/lib/python3.7/site-packages/pyscf
+
+[CONFIG] conf_file None
+[INPUT] verbose = 4
+[INPUT] num. atoms = 3
+[INPUT] num. electrons = 10
+[INPUT] charge = 0
+[INPUT] spin (= nelec alpha-beta = 2S) = 0
+[INPUT] symmetry False subgroup None
+[INPUT] Mole.unit = angstrom
+[INPUT]  1 O      0.000000000000   0.000000000000   0.000000000000 AA    0.000000000000   0.000000000000   0.000000000000 Bohr
+[INPUT]  2 H      0.000000000000  -0.757000000000   0.587000000000 AA    0.000000000000  -1.430522676296   1.109269235120 Bohr
+[INPUT]  3 H      0.000000000000   0.757000000000   0.587000000000 AA    0.000000000000   1.430522676296   1.109269235120 Bohr
+
+nuclear repulsion = 9.18825841774611
+number of shells = 9
+number of NR pGTOs = 30
+number of NR cGTOs = 13
+basis = 6-31g
+ecp = {}
+CPU time:         1.41
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 50
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /home/emejia/Documents/QC_Notebook/tmp13lu0yl2
+max_memory 4000 MB (current use 107 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -75.8340490748778
+  HOMO = -0.474582388935661  LUMO = 0.123994959437258
+cycle= 1 E= -75.9457767455179  delta_E= -0.112  |g|= 0.419  |ddm|= 1.19
+  HOMO = -0.414447619487384  LUMO = 0.209032823410356
+cycle= 2 E= -75.9747238131996  delta_E= -0.0289  |g|= 0.227  |ddm|= 0.407
+  HOMO = -0.504435654910898  LUMO = 0.197764901875756
+cycle= 3 E= -75.98376629873  delta_E= -0.00904  |g|= 0.0229  |ddm|= 0.143
+  HOMO = -0.500535775946495  LUMO = 0.203739016828124
+cycle= 4 E= -75.9839428426379  delta_E= -0.000177  |g|= 0.00326  |ddm|= 0.0226
+  HOMO = -0.501269879152749  LUMO = 0.203621077268916
+cycle= 5 E= -75.9839483820052  delta_E= -5.54e-06  |g|= 0.000468  |ddm|= 0.00489
+  HOMO = -0.501398426641479  LUMO = 0.20359178704882
+cycle= 6 E= -75.9839484964003  delta_E= -1.14e-07  |g|= 5.19e-05  |ddm|= 0.000786
+  HOMO = -0.501393793831014  LUMO = 0.203591012368498
+cycle= 7 E= -75.9839484979981  delta_E= -1.6e-09  |g|= 1.14e-05  |ddm|= 9.94e-05
+  HOMO = -0.501390592152129  LUMO = 0.20359059415794
+cycle= 8 E= -75.9839484981047  delta_E= -1.07e-10  |g|= 1.39e-06  |ddm|= 3.09e-05
+  HOMO = -0.50139081052945  LUMO = 0.20359031905265
+Extra cycle  E= -75.9839484981054  delta_E= -7.39e-13  |g|= 6.07e-07  |ddm|= 1.98e-06
+converged SCF energy = -75.9839484981054
+
+******** <class 'pyscf.mp.mp2.MP2'> ********
+nocc = 5, nmo = 13
+max_memory 4000 MB (current use 114 MB)
+E(MP2) = -76.1128170913255  E_corr = -0.128868593220089
+
+******** <class 'pyscf.cc.ccsd.CCSD'> ********
+CC2 = 0
+CCSD nocc = 5, nmo = 13
+max_cycle = 50
+direct = 0
+conv_tol = 1e-07
+conv_tol_normt = 1e-05
+diis_space = 6
+diis_start_cycle = 0
+diis_start_energy_diff = 1e+09
+max_memory 4000 MB (current use 115 MB)
+Init t2, MP2 energy = -76.1128170977655  E_corr(MP2) -0.128868599660074
+Init E_corr(CCSD) = -0.128868599660197
+cycle = 1  E_corr(CCSD) = -0.131124002835276  dE = -0.00225540318  norm(t1,t2) = 0.0228872
+cycle = 2  E_corr(CCSD) = -0.133988969938031  dE = -0.0028649671  norm(t1,t2) = 0.00828139
+cycle = 3  E_corr(CCSD) = -0.135292913608111  dE = -0.00130394367  norm(t1,t2) = 0.00329704
+cycle = 4  E_corr(CCSD) = -0.135413588320016  dE = -0.000120674712  norm(t1,t2) = 0.000547696
+cycle = 5  E_corr(CCSD) = -0.135401116421974  dE = 1.2471898e-05  norm(t1,t2) = 0.000202908
+cycle = 6  E_corr(CCSD) = -0.135397790125369  dE = 3.32629661e-06  norm(t1,t2) = 5.0614e-05
+cycle = 7  E_corr(CCSD) = -0.135398265626289  dE = -4.7550092e-07  norm(t1,t2) = 1.08896e-05
+cycle = 8  E_corr(CCSD) = -0.135397896439143  dE = 3.69187146e-07  norm(t1,t2) = 2.91949e-06
+cycle = 9  E_corr(CCSD) = -0.135397896869201  dE = -4.3005835e-10  norm(t1,t2) = 5.44969e-07
+CCSD converged
+E(CCSD) = -76.11934639497463  E_corr = -0.1353978968692014
